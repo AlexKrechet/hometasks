@@ -29,20 +29,4 @@ public class QuickSort {
         if(left < r) qSort(simpleArray, left, r);
         if(l < right) qSort(simpleArray, l, right);
     }
-    public static void main(String[] arg){
-        int [] simpleArray = new int [1000000];
-        for (int indx = 0; indx < simpleArray.length; indx++){
-            simpleArray[indx] = 10 + (int)(Math.random() * ((100 - 10) + 10));
-        }
-        for (int x: simpleArray) {
-            System.out.print(x + " ");
-        }
-        System.out.println();
-
-        quickSort(simpleArray);
-
-        for (int x: simpleArray) {
-            System.out.print(x + " ");
-        }
-    }
 }

@@ -1,7 +1,7 @@
 package homework2;
 
 //Fixed method
-public class bubbleSort {
+public class BubbleSort {
     public static void bubbleSort(int [] simpleArray){
 
         int temp;
@@ -13,16 +13,6 @@ public class bubbleSort {
                     simpleArray[secondIndx + 1] = temp;
                 }
             }
-        }
-    }
-    public static void main (String [] arg){
-        int [] simpleArray = new int[1000000];
-        for (int indx = 0; indx < simpleArray.length; indx++){
-            simpleArray[indx] = 1 + (int)(Math.random()*((100 - 1) + 1));
-        }
-        bubbleSort(simpleArray);
-        for (int x : simpleArray){
-            System.out.print(x + " ");
         }
     }
 }
