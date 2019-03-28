@@ -2,7 +2,8 @@ package homework2;
 
 public class SelectionSort {
     public static void selectionSort (int[] simpleArray){
-        int min, temp;
+        int min;
+        int temp;
 
         for (int index = 0; index < simpleArray.length-1; index++){
             min = index;

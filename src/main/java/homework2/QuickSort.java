@@ -5,16 +5,22 @@ public class QuickSort {
         qSort(simpleArray, 0, simpleArray.length - 1);
     }
     private static void qSort(int [] simpleArray, int left, int right) {
-        int l, r;
+        int l;
+        int r;
         l = left;
         r = right;
 
-        int x, y;
+        int x;
+        int y;
         x = simpleArray[(left + right) / 2];
 
         do {
-            while((simpleArray[l] < x) && (l < right)) l++;
-            while((x < simpleArray[r]) && (right > left)) r --;
+            while((simpleArray[l] < x) && (l < right)) {
+                l++;
+            }
+            while((x < simpleArray[r]) && (right > left)){
+                r --;
+            }
 
             if (l <= r){
                 y = simpleArray[l];
@@ -26,7 +32,11 @@ public class QuickSort {
         }
         while (l <= r);
 
-        if(left < r) qSort(simpleArray, left, r);
-        if(l < right) qSort(simpleArray, l, right);
+        if(left < r) {
+            qSort(simpleArray, left, r);
+        }
+        if(l < right) {
+            qSort(simpleArray, l, right);
+        }
     }
 }
